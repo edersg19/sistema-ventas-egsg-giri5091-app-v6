@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// Customize the entire app. Change :root to your selector if you want to scope the styles.
+.full-width{
+  width: 100%;
+}
+
+:root {
+  @include mat.toolbar-overrides((
+    container-background-color: rgb(20, 105, 192),
+    container-text-color: rgb(255, 255, 255),
+  ));
+}
