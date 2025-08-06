@@ -13,6 +13,6 @@ RUN npm run build --configuration=production
 FROM nginx:alpine
 
 # Copia archivos construidos
-COPY --from=builder /app/dist/sistema-ventas-ryrm-giri5091-app/browser /usr/share/nginx/html
+COPY --from=builder /app/dist/sistema-ventas-egsg-giri5091-app/browser /usr/share/nginx/html
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
